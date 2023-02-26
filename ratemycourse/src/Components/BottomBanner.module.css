@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	zoom: 1;
+}
+html,body{
+	height: 100%;
+}
+body{
+	font-family: 'Proxima Nova', sans-serif;
+}
+.hero{
+	height: 100%;
+	width: 100%;
+	font-size: 2em;
+	background: rgb(255, 255, 251);
+}
+	.hero-tagline{
+		float: left;
+	}
+	.hero-intro{
+		text-align: center;
+	}
+	.wordSlider{
+		height: 1em;
+		position: relative;
+		line-height: 1em;
+		margin:  0 .5em;
+		overflow: hidden;
+		float: left;
+		list-style-type: none;
+	}
+		.wordSlider>li{
+			text-align: center;
+			-webkit-animation: word-slider 8s ease-in-out infinite;
+			-moz-animation: word-slider 8s ease-in-out infinite;
+			-o-animation: word-slider 8s ease-in-out infinite;
+			animation: word-slider 8s ease-in-out infinite;
+		}
+		@-webkit-keyframes word-slider{
+			0%{
+				-webkit-transform: translate3D(0,0,0);
+			}
+			33%{
+				-webkit-transform: translate3D(0,-100%,0);
+			}
+			66%{
+				-webkit-transform: translate3D(0,-200%,0);
+			}
+			100%{
+				-webkit-transform: translate3D(0,-300%,0);
+			}
+		}
+		@-moz-keyframes wordSlider{
+			0%{
+				-moz-transform: translate3D(0,0,0);
+			}
+			33%{
+				-moz-transform: translate3D(0,-100%,0);
+			}
+			66%{
+				-moz-transform: translate3D(0,-200%,0);
+			}
+			100%{
+				-moz-transform: translate3D(0,-300%,0);
+			}
+		}
+		@-o-keyframes wordSlider{
+			0%{
+				-o-transform: translateY(0);
+			}
+			33%{
+				-o-transform: translateY(-100%);
+			}
+			66%{
+				-o-transform: translateY(-200%);
+			}
+			100%{
+				-o-transform: translateY(-300%);
+			}
+		}
+		@keyframes wordSlider{
+			0%{
+				transform: translate3D(0,0,0);
+			}
+			33%{
+				transform: translate3D(0,-100%,0);
+			}
+			66%{
+				transform: translate3D(0,-200%,0);
+			}
+			100%{
+				transform: translate3D(0,-300%,0);
+			}
+		}
+
+footer{
+	width: 100%;
+	height: 5em;
+}
+	.to-top{
+		display: block;
+		height: 50%;
+		margin: 1.25em auto;
+		text-align: center;
+		line-height: 2.5em;
+		cursor: pointer;
+	}
+/*Utility Classes*/
+.flexbox-container-center{
+	display: -webkit-box;
+	display: -moz-box;
+	display: flex;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	box-align: center;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	box-pack: center;
+}
+.flexbox-item-center{
+	-webkit-box-flex: 0;
+	-moz-box-flex: 0;
+	box-flex: 0;
+}
+.ie9 .flexbox-container-center{
+	display: table;
+}
+.ie9 .flexbox-item-center{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.inline-block{
+	display: inline-block;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
