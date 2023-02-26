@@ -1,0 +1,20 @@
+.body{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5b99334db10598cd95f5c241/1556820447799-BD88B17PVOT15FVQ76A8/The+Yard-4.png?format=1500w");
+    background-repeat: no-repeat;
+    flex: 1 1 1px;
+    padding: 3rem;
+    height:70%;
+    max-height:350px;
+    display:block;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 80px;
+    overflow: hidden;
+}
+
+.text{
+  color:white;
+  font-size: 30px;
+  font-family: 'Poppins', serif;
+}
