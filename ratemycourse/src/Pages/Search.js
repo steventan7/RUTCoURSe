@@ -25,7 +25,7 @@ class Search extends Component {
   render() {
     
     return (
-      <div>
+      <div className={styles.padding}>
         <Grid
           container
           alignItems="center"

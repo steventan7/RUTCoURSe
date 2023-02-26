@@ -18,7 +18,11 @@ const images = [
   },
   {
     imgPath:
-      'logo512.png',
+      'pres.jpg',
+  },
+  {
+    imgPath:
+      'group.jpg',
   },
 ];
 
@@ -31,7 +35,7 @@ const LeftSlideShow = () => {
   };
 
   return (
-    <Box sx={{ maxWidth: 440, flexGrow: 1 }}>
+    <Box sx={{ maxWidth: 300, flexGrow: 1 }}>
       <Paper
         square
         elevation={0}
@@ -57,7 +61,7 @@ const LeftSlideShow = () => {
                 component="img"
                 sx={{
                   height: 265,
-                  width:350,
+                  width:300,
                   display: 'block',
                   overflow: 'hidden',
                 }}

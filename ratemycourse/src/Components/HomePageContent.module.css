@@ -3,18 +3,21 @@
     background-repeat: no-repeat;
     flex: 1 1 1px;
     padding: 3rem;
-    height:70%;
-    max-height:350px;
+    height:450px;
+    max-height:600px;
     display:block;
     background-size: cover;
     background-position: center;
     position: relative;
     padding: 80px;
-    overflow: hidden;
 }
 
 .text{
   color:white;
   font-size: 30px;
   font-family: 'Poppins', serif;
+}
+
+img {
+  border-radius: 50%;
 }
