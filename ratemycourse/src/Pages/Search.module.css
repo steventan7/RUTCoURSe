@@ -3,10 +3,10 @@
     box-shadow: 5px 5px 5px #ccc;
 }
 
-p{
+.text {
     color: white;
 }
 
-.padding{
-    padding-top:100px;
+.padding {
+    padding-top: 100px;
 }
