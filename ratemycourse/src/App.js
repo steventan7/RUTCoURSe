@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CoursePage from "./Pages/CoursePage";
 import HomePage from './Pages/HomePage'
-import CoursePage from './Pages/CoursePage'
 
 function App() {
   return (
