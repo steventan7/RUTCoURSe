@@ -1,14 +1,11 @@
 import React from "react";
-import HomePageContent from "../Components/HomePageContent";
+import styles from "./Middle.module.css"
+import LeftSlideShow from "./LeftSlideShow";
 import Grid from "@mui/system/Unstable_Grid/Grid";
-import LeftSlideShow from "../Components/LeftSlideShow";
-
-const HomePage = () => {
-  return (
-    
-    <div>
-      <HomePageContent/>
-      <Grid
+const Middle = () => {
+  return (   
+    <div className={styles.body}>
+        <Grid
         container
         alignItems="center"
         justifyContent="center"
@@ -23,4 +20,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Middle;
