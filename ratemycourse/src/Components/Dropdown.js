@@ -25,6 +25,7 @@ class Dropdown extends Component {
   onChange = e => {
     const { suggestions } = this.props;
     const userInput = e.currentTarget.value;
+    console.log(suggestions);
 
     const filteredSuggestions = suggestions.filter(
       suggestion =>
@@ -87,11 +88,11 @@ class Dropdown extends Component {
       }
     } = this;
 
-    let suggestionsListComponent;
+    let studentListComponent;
 
     if (showSuggestions && userInput) {
       if (filteredSuggestions.length) {
-        suggestionsListComponent = (
+        studentListComponent = (
           <ul className ={styles.suggestions}>
             {filteredSuggestions.map((suggestion, index) => {
               let className;
@@ -103,6 +104,7 @@ class Dropdown extends Component {
               return (
                 <li className={className} key={suggestion} onClick={onClick}>
                   {suggestion}
+                  
                 </li>
               );
             })}
@@ -120,7 +122,7 @@ class Dropdown extends Component {
           value={userInput}
           className = {styles.search}
         />
-        {suggestionsListComponent}
+        {studentListComponent}
       </Fragment>
     );
   }

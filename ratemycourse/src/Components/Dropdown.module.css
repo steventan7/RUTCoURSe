@@ -67,6 +67,9 @@ input {
 }
 
 .suggestions {
+  text-align:center;
+  color:white;
+  background-color:black;
   border: 1px solid #999;
   border-top-width: 0;
   list-style: none;
@@ -83,8 +86,8 @@ input {
 
 .suggestion-active,
 .suggestions li:hover {
-  background-color: #008f68;
-  color: #fae042;
+  background-color: black;
+  color: #FC5A4C;
   cursor: pointer;
   font-weight: 700;
 }

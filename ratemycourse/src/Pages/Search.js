@@ -12,18 +12,23 @@ class Search extends Component {
   componentDidMount() {
     console.log(API_COURSES);
     fetch(API_COURSES)
-      .then(res => res.json()) // It resolves the promise with a JSON object
+      .then(res => res.json()) 
       .then(res => {
-        console.log(res) // make sure that matches is `res` directly or a neste object within `res` object
+        console.log(res) 
         this.setState({
-          matches: res,
+          courses: res,
           loading: false
         })
       })
   }
 
   render() {
-    
+    if (this.state.loading) {
+      return <div>Loading...</div>
+    }
+    if (this.state.courses.length === 0) {
+      return <div>There aren't any matches !</div>
+    }
     return (
       <div className={styles.padding}>
         <Grid
@@ -35,11 +40,14 @@ class Search extends Component {
         >
           <Grid item>
               <img className = {styles.image} src="rutgers.png" alt="rutcourse" height="150px" width="150px"></img>
+              <br></br>
+              <br></br>
           </Grid>
           <Grid item>
             <b><p>Enter your class to get started</p></b>
+            <br></br>
           </Grid>
-          <Dropdown courses = {this.state.courses.name}/>
+          <Dropdown suggestions = {this.state.courses.map(course => course.name)}/>
         </Grid>
       </div>
     );
