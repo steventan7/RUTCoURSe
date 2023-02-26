@@ -14,7 +14,14 @@ class ReviewViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.ReviewSerializer
 
 def index(request):
+    # fixCourses()
     return HttpResponse("Hello, world!")
+
+def fixCourses():
+    courses = models.Course.objects.all()
+    for course in courses:
+        course.name = " ".join([n.capitalize() for n in course.name.split(" ")])
+        course.save()
 
 def addCourses():
     """
