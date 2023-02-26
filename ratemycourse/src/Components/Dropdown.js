@@ -118,6 +118,7 @@ class Dropdown extends Component {
           onChange={onChange}
           onKeyDown={onKeyDown}
           value={userInput}
+          className = {styles.search}
         />
         {suggestionsListComponent}
       </Fragment>
