@@ -4,7 +4,7 @@ import { Grid } from "@mui/material";
 const HomePage = () => {
   return (
     <div>
-    {/* // <div className={styles.glow}></div> */}
+      {/* // <div className={styles.glow}></div> */}
       <Grid
         container
         alignItems="center"
@@ -13,8 +13,8 @@ const HomePage = () => {
         direction="column"
       >
         <Grid item>
-            <h1>RateMyCourse</h1><br></br>
-            <p>Enter your class to get started</p>
+          <h1>RateMyCourse</h1><br></br>
+          <p>Enter your class to get started</p>
         </Grid>
         {/* <Grid item>
           <Button
