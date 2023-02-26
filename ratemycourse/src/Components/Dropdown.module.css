@@ -22,7 +22,7 @@
 }
 
 .search:hover > .input{
-    width: 400px;
+    width: 300px;
 }
 
 .search .input{
@@ -91,4 +91,8 @@ input {
 
 .suggestions li:not(:last-of-type) {
   border-bottom: 1px solid #999;
+}
+
+.image{
+  border-radius: 50%;
 }
